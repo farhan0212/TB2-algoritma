@@ -7,23 +7,32 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Form Input Validation</h1>
+    <h1 class="h1">Form Input Validation</h1>
 
     <!-- form -->
-    <form id="inputForm">
+    <form id="inputForm" class="form">
       <label>Username</label>
+      <br />
+      <small>min 3 - 16 character</small>
       <input type="text" id="inputUsername" placeholder="Username ..." />
       <span id="usernameError" class="error"></span>
-      <br />
+      <br class="border" />
       <label>Email</label>
+      <br />
+      <small>must email</small>
       <input type="email" id="inputEmail" placeholder="John@example.com" />
       <span id="emailError" class="error"></span>
       <br />
       <label>Password</label>
+      <br />
+      <small
+        >min 8 character, must contain uppercare, lowercase and special
+        character</small
+      >
       <input type="password" placeholder="Password..." id="inputPassword" />
       <span id="passwordError" class="error"></span>
       <br />
-      <button type="submit">Submit</button>
+      <button type="submit" class="btn">Submit</button>
     </form>
     <!-- end form -->
     <script src="script.js"></script>
